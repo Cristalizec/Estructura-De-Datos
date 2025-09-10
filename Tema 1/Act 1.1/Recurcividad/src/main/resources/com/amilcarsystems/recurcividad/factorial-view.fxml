@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.amilcarsystems.recurcividad.controller.FactorialController">
+    <center>
+        <VBox alignment="CENTER" spacing="10" padding="20">
+            <Label text="Calculadora de Factorial (Recursividad)" style="-fx-font-size: 16px;"/>
+            <TextField fx:id="txtNumber" promptText="Ingresa un número"/>
+            <Button text="Calcular Factorial" onAction="#calculateFactorial"/>
+            <Label fx:id="lblResult" text="Resultado aparecerá aquí"/>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.amilcarsystems.recursivefibonacci.controller.FibonacciController"
+      spacing="10" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Calculadora de Fibonacci" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+    <Label text="Ingresa un número:"/>
+    <TextField fx:id="numberInputField" promptText="Ejemplo: 5"/>
+    <Button fx:id="calculateButton" text="Calcular Fibonacci"/>
+    <Label fx:id="resultLabel1" text="" style="-fx-text-fill: blue; -fx-font-size: 14px;"/>
+    <Label fx:id="resultLabel2" text="" style="-fx-text-fill: green; -fx-font-size: 14px;"/>
+    <Label fx:id="resultLabel3" text="" style="-fx-text-fill: red; -fx-font-size: 14px;"/>
+</VBox>

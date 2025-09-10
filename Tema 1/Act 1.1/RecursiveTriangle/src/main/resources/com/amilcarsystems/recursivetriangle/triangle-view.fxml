@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.amilcarsystems.recursivetriangle.controller.TriangleController"
+      spacing="10" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Triángulo Rectángulo Recursivo" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <Label text="Tamaño del triángulo:"/>
+    <TextField fx:id="sizeField" promptText="Ejemplo: 5"/>
+
+    <Label text="Tipo de triángulo:"/>
+    <ChoiceBox fx:id="typeChoiceBox"/>
+
+    <Button fx:id="drawButton" text="Dibujar triángulo"/>
+
+    <Label fx:id="errorLabel" text="" style="-fx-text-fill: red;"/>
+
+    <TextArea fx:id="triangleArea" editable="false" style="-fx-font-family: monospace; -fx-font-size: 14px;"/>
+</VBox>

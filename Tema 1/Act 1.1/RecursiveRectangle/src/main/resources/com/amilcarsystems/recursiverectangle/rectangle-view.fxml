@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.amilcarsystems.recursiverectangle.controller.RectangleController"
+      spacing="10" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Impresión de Rectángulo" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <Label text="Altura:"/>
+    <TextField fx:id="heightField" promptText="Ejemplo: 3"/>
+
+    <Label text="Base:"/>
+    <TextField fx:id="widthField" promptText="Ejemplo: 4"/>
+
+    <Button fx:id="drawButton" text="Dibujar rectángulo"/>
+
+    <Label fx:id="errorLabel" text="" style="-fx-text-fill: red;"/>
+
+    <TextArea fx:id="rectangleArea" editable="false" style="-fx-font-family: monospace; -fx-font-size: 14px;"/>
+</VBox>

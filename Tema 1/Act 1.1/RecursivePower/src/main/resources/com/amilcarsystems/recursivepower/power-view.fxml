@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.amilcarsystems.recursivepower.controller.PowerController"
+      spacing="10" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Calculadora de Potencias" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <Label text="Ingresa la base:"/>
+    <TextField fx:id="baseField" promptText="Ejemplo: 2"/>
+
+    <Label text="Ingresa el exponente:"/>
+    <TextField fx:id="exponentField" promptText="Ejemplo: 4"/>
+
+    <Button fx:id="calculateButton" text="Calcular potencia"/>
+
+    <Label fx:id="resultLabel" text="" style="-fx-text-fill: purple; -fx-font-size: 14px;"/>
+</VBox>

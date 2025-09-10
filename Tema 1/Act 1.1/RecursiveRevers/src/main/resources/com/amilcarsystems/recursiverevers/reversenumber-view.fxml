@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.amilcarsystems.recursiverevers.controller.ReverseNumberController"
+      spacing="10" alignment="CENTER">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Inversor de Números" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <Label text="Ingresa un número:"/>
+    <TextField fx:id="numberField" promptText="Ejemplo: 1234"/>
+
+    <Button fx:id="reverseButton" text="Invertir número"/>
+
+    <Label fx:id="resultLabel" text="" style="-fx-text-fill: orange; -fx-font-size: 14px;"/>
+</VBox>
